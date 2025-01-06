@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Peminjaman</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFFFE0; /* Warna kuning lembut */
+        }
+        header {
+            background-color: #006400; /* Hijau */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 90px;
+            margin: 0 15px 0 0;
+            float: left;
+        }
+        nav {
+            background-color: #FFD700; /* Kuning */
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #006400; /* Hijau */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            background-color: #98FB98; /* Hijau pucat */
+            text-align: center;
+        }
+        .transaction, .rules, .form-container {
+            background-color: #FFFFE0; /* Kuning lembut */
+            border: 1px solid #006400; /* Hijau */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        footer {
+            background-color: #006400; /* Hijau */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo perpus fara.png" alt="Logo Perpustakaan Fara">
+        <h1>Peminjaman dan Transaksi </h1>
+    </header>
+    <nav>
+        <a href="Halaman beranda web perpus.html">Beranda</a>
+        <a href="Katalog Buku.html">Katalog Buku</a>
+        <a href="Peminjaman web.html">Peminjaman dan Transaksi</a>
+        <a href="Layout web.html">Kembali</a>
+    </nav>
+    <main>
+        <div class="transaction">
+            <h2>Transaksi Peminjaman</h2>
+            <p><strong>Waktu Peminjaman:</strong> 7 Hari</p>
+            <p><strong>Harga Transaksi:</strong> Rp 7.500 per buku</p>
+            <p><strong>Operasional Peminjaman:</strong> Senin - Sabtu (08:00 - 16:00)</p>
+        </div>
+        <div class="rules">
+            <h2>Aturan Peminjaman</h2>
+            <ol>
+                <li>Setiap anggota dapat meminjam maksimal 3 buku sekaligus.</li>
+                <li>Denda sebesar Rp 25000/hari akan dikenakan untuk buku yang terlambat dikembalikan.</li>
+                <li>Buku yang rusak atau hilang harus diganti dengan buku yang sama atau membayar biaya ganti rugi sesuai harga buku.</li>
+                <li>Harap mengembalikan buku tepat waktu untuk menghindari denda.</li>
+            </ol>
+        </div>
+        <div class="form-container">
+            <h2>Pendaftaran Transaksi Peminjaman</h2>
+            <form>
+                <label for="name">Nama Lengkap:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="book">Judul Buku:</label><br>
+                <input type="text" id="book" name="book" required><br><br>
+
+                <label for="date">Tanggal Peminjaman:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="duration">Durasi (hari):</label><br>
+                <input type="number" id="duration" name="duration" min="1" max="14" required><br><br>
+
+                <button type="submit">Ajukan Peminjaman</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Teruslah Membaca!</p>
+    </footer>
+</body>
+</html>
