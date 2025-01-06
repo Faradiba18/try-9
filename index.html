@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Web Perpustakaan</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #FFD700; /* Kuning */
+            color: #006400; /* Hijau */
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 90px;
+            margin: 0 15px 0 0;
+            float: left;
+        }
+        nav {
+            background-color: #006400; /* Hijau */
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            background-color: #FFFFE0; /* Warna kuning lembut */
+            padding: 20px;
+            min-height: calc(100vh - 150px);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #F0E68C; /* Kuning pucat */
+            padding: 15px;
+            margin-right: 20px;
+        }
+        .content {
+            flex: 3;
+            background-color: #98FB98; /* Hijau pucat */
+            padding: 15px;
+        }
+        footer {
+            background-color: #FFD700; /* Kuning */
+            color: #006400; /* Hijau */
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo perpus fara.png" alt="Logo Perpustakaan Fara">
+        <h1>Perpustakaan Fara</h1>
+    </header>
+    <nav>
+        <a href="Halaman beranda web perpus.html">Beranda</a>
+        <a href="Katalog Buku.html">Katalog Buku</a>
+        <a href="Peminjaman web.html">Peminjaman dan Transaksi</a>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="profil web.html">Profil Perpustakaan</a></li>
+                <li><a href="halaman login.html">Login</a></li>
+                <li><a href="Kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Selamat Datang di Perpustakaan Fara</h2>
+            <p>Temukan buku favorit Anda dan nikmati layanan kami!</p>
+            <img src="Foto perpus 1.jpg" width="550" height="400">
+        </div>
+    </main>
+    <footer>
+        <p>Perpustakaan Fara. by @farmasla_</p>
+    </footer>
+</body>
+</html>

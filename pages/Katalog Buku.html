@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFFFE0; /* Warna kuning lembut */
+        }
+        header {
+            background-color: #006400; /* Hijau */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 90px;
+            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        nav {
+            background-color: #FFD700; /* Kuning */
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #006400; /* Hijau */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            background-color: #98FB98; /* Hijau pucat */
+            text-align: center;
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .book {
+            background-color: #FFFFE0; /* Kuning lembut */
+            border: 1px solid #006400; /* Hijau */
+            border-radius: 10px;
+            padding: 15px;
+            text-align: left;
+        }
+        .book h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+        .book p {
+            margin: 0;
+        }
+        footer {
+            background-color: #006400; /* Hijau */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo perpus fara.png" alt="Logo Perpustakaan Fara">
+        <h1>Katalog Buku</h1>
+    </header>
+    <nav>
+        <a href="Halaman beranda web perpus.html">Beranda</a>
+        <a href="Katalog Buku.html">Katalog Buku</a>
+        <a href="Peminjaman web.html">Peminjaman dan Transaksi</a>  
+        <a href="Layout web.html">Kembali</a>
+    </nav>
+    <main>
+        <h2>Katalog Buku</h2>
+        <div class="catalog">
+            <div class="book">
+                <h3>Atomic Habits</h3>
+                <p><strong>Genre:</strong> Pengembangan Diri</p>
+                <p><strong>Status:</strong> Tersedia</p>
+            </div>
+            <div class="book">
+                <h3>Pulang</h3>
+                <p><strong>Genre:</strong> Fiksi</p>
+                <p><strong>Status:</strong> Dipinjam</p>
+            </div>
+            <div class="book">
+                <h3>Sejarah Dunia yang Disembunyikan</h3>
+                <p><strong>Genre:</strong> Sejarah</p>
+                <p><strong>Status:</strong> Tersedia</p>
+            </div>
+            <div class="book">
+                <h3>Rich Dad Poor Dad</h3>
+                <p><strong>Genre:</strong> Bisnis</p>
+                <p><strong>Status:</strong> Tersedia</p>
+            </div>
+            <div class="book">
+                <h3>Laskar Pelangi</h3>
+                <p><strong>Genre:</strong> Fiksi</p>
+                <p><strong>Status:</strong> Tersedia</p>
+            </div>
+            <div class="book">
+                <h3>1984</h3>
+                <p><strong>Genre:</strong> Distopia</p>
+                <p><strong>Status:</strong> Dipinjam</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Teruslah Membaca!</p>
+    </footer>
+</body>
+</html>
